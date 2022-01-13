@@ -1,4 +1,20 @@
 <app-header nombreToolbar="Alert"></app-header>
 <ion-content>
+<ion-button (click)="presentAlert()" expand="block" >
+    Peligro
+</ion-button>
+<ion-button (click)="presentAlertMultipleButtons()" expand="block">
+   muchos botones
+</ion-button>
+
+<ion-button (click)="presentAlertPrompt()" expand="block">
+    muchos botones
+ </ion-button>
+ <ion-button (click)="onClick()" expand="block" >
+     una lista del textarea
+ </ion-button>
+ <ion-textarea *ngFor="let c of prueba" >
+     {{c.name}}
+ </ion-textarea>
 
 </ion-content>

@@ -24,3 +24,11 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+//usamos la clase rojo que creamos en pages/action-sheet/action-sheet.ts
+//hemos buscado tambien la clase donde esta el icono de la papelera en md para ponerlo en  rojo
+.rojo, .rojo .sc-ion-action-sheet-md{
+    color: red !important;
+}

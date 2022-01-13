@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+//creamos esta interfaz para poder ponerle un tipado expecifico para componente que tiene 2 propiedades
 interface Componente{
   icon:string;
   name:string;
@@ -13,15 +14,22 @@ interface Componente{
 })
 export class InicioPage implements OnInit {
   componentes: Componente[]=[
+    
     {
+      
       icon:'american-football-outline',
       name: 'Action Sheet',
       redirecTo: '/action-sheet'
     },
     {
-      icon:'logo-apple-appstore',
+      icon:'alert-circle-outline',
       name: 'Alert',
       redirecTo: '/alert'
+    },
+    {
+      icon:'beaker-outline',
+      name: 'Avatar',
+      redirecTo: '/avatar'
     }
 
 
