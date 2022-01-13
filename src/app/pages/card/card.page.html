@@ -1,0 +1,42 @@
+<!-- nombreToolbar es el nombre de la propiedad que hemos creado para poner el nombre de l apagina -->
+<app-header nombreToolbar="card"></app-header>
+
+<ion-content>
+
+  <ion-card >
+    <!-- hemos creado diferentes tarjetas 
+    
+    esta tiene el header y la parte de contenido-->
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+<!-- otra tarjeta que parece un marcador -->
+
+  <ion-card>
+    <ion-item color="warning">
+      <ion-icon slot="start" name="pin-outline"></ion-icon>
+      <ion-label>marcador</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <!-- contenido suelto -->
+  <ion-card-content>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iure, iusto similique velit, aliquam suscipit tempora, modi labore voluptate ipsam quae ipsa tempore omnis tenetur libero facilis laboriosam aliquid! Harum.
+  </ion-card-content>
+
+<!-- hemos metido una imagen y queda un mini hueco que espera que metamos contenido -->
+  <ion-card>
+    <ion-img src="https://as01.epimg.net/meristation/imagenes/2021/08/25/noticias/1629865598_915644_1629865733_noticia_normal.jpg"></ion-img>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iure, iusto similique velit, aliquam suscipit tempora, modi labore voluptate ipsam quae ipsa tempore omnis tenetur libero facilis laboriosam aliquid! Harum.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
