@@ -12,4 +12,14 @@ export class CardPage implements OnInit {
   ngOnInit() {
   }
 
+  //recordando como se hacen los ifs en typescript
+  
+// pepe(){
+//   if (1==1){
+//     console.log("hola")
+//   }else{
+//     console.log("adios")
+//   }
+
+
 }

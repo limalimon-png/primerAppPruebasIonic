@@ -1,0 +1,87 @@
+<app-header nombreToolbar="checks"></app-header>
+
+
+<!-- importante 
+
+ para poder darle al check en el cuadrado y a su lado, deberiamos meter el checbpx en ion-item-->
+<ion-content class="ion-padding">
+
+
+
+<h3> Default Checkbox </h3>
+<ion-checkbox></ion-checkbox>
+
+<h3> Disabled Checkbox </h3>
+<ion-checkbox disabled="true"></ion-checkbox>
+
+<h3> Checked Checkbox </h3>
+<ion-checkbox checked="true"></ion-checkbox>
+
+<h3> Checkbox Colors </h3>
+<ion-item>
+  <ion-checkbox color="primary"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox color="secondary"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox color="danger"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox color="light"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<h3> Checkboxes in a List </h3>
+<ion-list>
+  <ion-item *ngFor="let entry of form">
+    <ion-label>{{entry.val}}</ion-label>
+    <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+  </ion-item>
+</ion-list>
+
+<ion-item>
+  <ion-checkbox slot="start">
+  </ion-checkbox>
+  <ion-label>Label</ion-label>
+</ion-item>
+
+
+
+<!-- vamos a crear una lista de checkbox -->
+<ion-list>
+  <!-- ponemos el *ngfor en ion-item porque queremos que se replique los items de checkbox -->
+  <ion-item *ngFor="let item of data" (click)="onClick(item)">
+    <!-- formas de rizar el rizo item.selected ? false:true -->
+
+    <!--*** ngmodel actualiza la informacion que tiene la propiedad para poder usarla ****
+    internamente -->
+    <ion-checkbox slot="start" 	[checked]="item.selected" [color]="item.name"
+    [(ngModel)]="item.selected"></ion-checkbox>
+    <!-- solo se pone {{cuando esta fuera por ejempplo el nombre de la label}} -->
+    <ion-label >{{item.name}}</ion-label>
+  </ion-item>
+</ion-list>
+
+
+  
+  <ion-button (click)="onClick2()" expand="inline" >
+    Ver datos
+  </ion-button>
+  <ion-button (click)="borrarDatos()" expand="inline"  >
+    borrarDatos
+  </ion-button>
+
+  
+
+
+<ion-item>
+<ion-textarea>{{datos}}</ion-textarea>
+</ion-item>
+</ion-content>
