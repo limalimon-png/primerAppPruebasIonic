@@ -7,17 +7,20 @@ import { LoadingController } from '@ionic/angular';
   styleUrls: ['./loading.page.scss'],
 })
 export class LoadingPage implements OnInit {
+  //creamos la propiedad de loading
   loading: HTMLIonLoadingElement;
 
+  //cogemos el loading controller para luego poder usarlo
   constructor(private loadingController:LoadingController) { }
 
   ngOnInit() {
   }
 
 
-
+// llamamos al metodo donde se crea el loading y le pasamos el mensaje
   mostrarLoading(){
     this.presentLoading('cargando...');
+    //asi estara esperando dos segundos a terminar
     setTimeout(()=>{
       this.loading.dismiss();
     },2000)

@@ -8,7 +8,8 @@
       <ion-label>primer input normal</ion-label>
     </ion-list-header>
 
-
+<!-- hay diferentes tipos de inputs
+van dentro del ilist -->
     <ion-item>
       <ion-label>Nombre:</ion-label>
       <ion-input type="text" placeholder="nombre" [(ngModel)]="nombre"></ion-input>
@@ -25,14 +26,17 @@
 
   </ion-list>
 
-
+<!-- creamos un formulario en el que queremos validar los campos -->
   <ion-label>Formulario</ion-label>
-
+<!-- cuando le dan a submit envia toda la informacion del formulario -->
   <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)">
     <ion-list-header>
       <ion-label>Formulario valido:  {{formulario.valid}}</ion-label>
     </ion-list-header>
 
+    <!-- importante poner siempre el name si no no funciona 
+          el patern es una expresion regular
+          con el ngmodel actualizamos la informacion de la propiedad del usuario-->
     <ion-item>
       <ion-label>Email:</ion-label>
       <ion-input type="email" placeholder="name@email.com" 
@@ -52,7 +56,6 @@
 </ion-button>
 
 
-iform
   </form>
 
 

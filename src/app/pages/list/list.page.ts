@@ -12,15 +12,17 @@ export class ListPage implements OnInit {
 
 //para hacer referencia a un componente del html usamos viewchild
 @ViewChild(IonList) ionList:IonList;
-
+  //creamos usuariuos para guardar la informacion que cogeremos del servicio
   usuarios:Observable<any>;
+  //cogemos el servicio
   constructor(private dataService:DataService ) { }
 
   ngOnInit() {
+    //lo guardamos
     this.usuarios=this.dataService.getUsuarios();
   }
 
-
+//lo que hara en caso de deslizar y pulsar la opcion
   favorite(item:any){
     console.log('favourite',item)
     this.ionList.closeSlidingItems();

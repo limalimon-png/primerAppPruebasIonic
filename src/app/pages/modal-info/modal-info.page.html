@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modal page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+<ion-button (click)="salirSinArgumentos()" expand="block" >
+  salirSinArgumentos
+</ion-button>
+<ion-button (click)="salirConArgumentos()" expand="block" >
+  salirConArgumentos
+</ion-button>
+<ion-item>
+  <h4>{{nombre}}</h4>
+  <p slot="end">{{pais}}</p>
+</ion-item>
+</ion-content>

@@ -1,0 +1,98 @@
+[
+    
+    {
+      
+      "icon":"american-football-outline",
+      "name": "Action Sheet",
+      "redirecTo": "/action-sheet"
+    },
+    {
+      "icon":"alert-circle-outline",
+      "name": "Alert",
+      "redirecTo": "/alert"
+    },
+    {
+      "icon":"beaker-outline",
+      "name": "Avatar",
+      "redirecTo": "/avatar"
+    },
+    {
+      "icon":"radio-button-on-outline",
+      "name": "Botones",
+      "redirecTo": "/botones"
+    },
+    {
+      "icon":"card-outline",
+      "name": "Cards",
+      "redirecTo": "/card"
+    },
+    {
+      "icon":"checkmark-done-outline",
+      "name": "checkbox",
+      "redirecTo": "/checkbox"
+    },
+    {
+      "icon":"calendar-outline",
+      "name": "dateTime",
+      "redirecTo": "/date-time"
+    },
+    {
+      "icon":"bookmark-outline",
+      "name": "Fab",
+      "redirecTo": "/fab"
+    },
+    {
+      "icon":"headset-outline",
+      "name": "prueba",
+      "redirecTo": "/prueba"
+    },
+    {
+      "icon":"grid-outline",
+      "name": "grid",
+      "redirecTo": "/grid"
+    },
+    
+    {
+      "icon":"leaf-outline",
+      "name": "InfiniteScroll",
+      "redirecTo": "/infinite-scroll"
+    },
+    {
+      "icon":"terminal-outline",
+      "name": "inputs",
+      "redirecTo": "/input"
+    },
+    {
+      "icon":"terminal-outline",
+      "name": "listas",
+      "redirecTo": "/list"
+    },
+    {
+      "icon":"terminal-outline",
+      "name": "reordenar",
+      "redirecTo": "/reorder"
+    },
+    
+    {
+      "icon":"refresh-circle-outline",
+      "name": "loading",
+      "redirecTo": "/loading"
+    },
+    {
+      "icon":"phone-portrait-outline",
+      "name": "modal",
+      "redirecTo": "/modal"
+    },
+    {
+      "icon":"tablet-portrait-outline",
+      "name": "popover",
+      "redirecTo": "/popover"
+    },
+    {
+      "icon":"code-working-outline",
+      "name": "progress bar",
+      "redirecTo": "/progress"
+    }
+
+   
+  ]

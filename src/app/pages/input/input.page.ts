@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
 export class InputPage implements OnInit {
 
 nombre:string ="guiller";
+//hemos creado la propiedad usuario que es donde guardamos la informacion
 usuario={
   email:'',
   password:''

@@ -5,7 +5,8 @@
     </ion-buttons>
       
     <ion-title color="primary">reorder</ion-title>
-    <!-- boton cambia la propiedad reorder group-->
+    <!-- boton cambia la propiedad reorder group
+    -->
     <ion-buttons slot="end">
       <ion-button (click)="onClick()">
         <ion-label>toogle</ion-label>
@@ -16,6 +17,10 @@
 
 <ion-content>
 <ion-list>
+  <!-- introducimos la informacion con nfor
+        usamos la propiedad sePuedemover para poder moverlo
+        doReorder inportante para que no se quede pillado
+        cambiamos el icono en el ion-reorder -->
   <ion-reorder-group  [disabled]="sePuedemover"
   (ionItemReorder)="doReorder($event)">
 

@@ -1,12 +1,12 @@
 import { InfiniteScrollPage } from './../infinite-scroll/infinite-scroll.page';
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { Componente } from 'src/app/interfaces/interfaces';
+import { Observable } from 'rxjs';
+import { DataService } from '../../services/data.service';
 
 //creamos esta interfaz para poder ponerle un tipado expecifico para componente que tiene 2 propiedades
-interface Componente{
-  icon:string;
-  name:string;
-  redirecTo:string;
-}
+
 
 @Component({
   selector: 'app-inicio',
@@ -14,87 +14,22 @@ interface Componente{
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
-  componentes: Componente[]=[
-    
-    {
-      
-      icon:'american-football-outline',
-      name: 'Action Sheet',
-      redirecTo: '/action-sheet'
-    },
-    {
-      icon:'alert-circle-outline',
-      name: 'Alert',
-      redirecTo: '/alert'
-    },
-    {
-      icon:'beaker-outline',
-      name: 'Avatar',
-      redirecTo: '/avatar'
-    },
-    {
-      icon:'radio-button-on-outline',
-      name: 'Botones',
-      redirecTo: '/botones'
-    },
-    {
-      icon:'card-outline',
-      name: 'Cards',
-      redirecTo: '/card'
-    },
-    {
-      icon:'checkmark-done-outline',
-      name: 'checkbox',
-      redirecTo: '/checkbox'
-    },
-    {
-      icon:'calendar-outline',
-      name: 'dateTime',
-      redirecTo: '/date-time'
-    },
-    {
-      icon:'bookmark-outline',
-      name: 'Fab',
-      redirecTo: '/fab'
-    },
-    {
-      icon:'headset-outline',
-      name: 'prueba',
-      redirecTo: '/prueba'
-    },
-    {
-      icon:'grid-outline',
-      name: 'grid',
-      redirecTo: '/grid'
-    },
-    
-    {
-      icon:'leaf-outline',
-      name: 'InfiniteScroll',
-      redirecTo: '/infinite-scroll'
-    },
-    {
-      icon:'terminal-outline',
-      name: 'inputs',
-      redirecTo: '/input'
-    },
-    {
-      icon:'terminal-outline',
-      name: 'listas',
-      redirecTo: '/list'
-    },
-    
-    {
-      icon:'refresh-circle-outline',
-      name: 'loading',
-      redirecTo: '/loading'
-    },
+  //creamos la prpiedad donde vamos a recibir el menu
+  componentes: Observable<Componente[]>;
 
-   
-  ];
-  constructor() { }
+  //cogemos menuController y dataSevicie
+  //menuController para poder abrir el menu
+  //dataService para leer el menu que recibim0os
+  constructor(private menuController:MenuController,
+    private dataService:DataService) { }
 
   ngOnInit() {
+    this.componentes = this.dataService.getMenu();
   }
 
+
+  abrirMenu(){
+    this.menuController.open('first');
+
+  }
 }

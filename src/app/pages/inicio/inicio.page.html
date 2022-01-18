@@ -1,5 +1,15 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <!-- maneraDificil -->
+    <!-- <ion-buttons slot="start">
+      <ion-button (click)="abrirMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+        
+      </ion-button>
+    </ion-buttons> -->
     <ion-title>inicio</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,7 +26,7 @@
   <br>
   <br>
   <ion-list>
-    <ion-item *ngFor="let c of componentes"
+    <ion-item *ngFor="let c of componentes |async"
     [routerLink]="c.redirecTo"
     detail
     >

@@ -14,6 +14,7 @@ sePuedemover:boolean=true;
 
   ngOnInit() {
   }
+  //al darle a complete se termina de mover si no se queda atascado
   doReorder(cambio){
     console.log(cambio)
     cambio.detail.complete();
