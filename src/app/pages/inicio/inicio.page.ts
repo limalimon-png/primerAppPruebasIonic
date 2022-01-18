@@ -73,6 +73,21 @@ export class InicioPage implements OnInit {
       name: 'InfiniteScroll',
       redirecTo: '/infinite-scroll'
     },
+    {
+      icon:'terminal-outline',
+      name: 'inputs',
+      redirecTo: '/input'
+    },
+    {
+      icon:'terminal-outline',
+      name: 'listas',
+      redirecTo: '/list'
+    },
+    {
+      icon:'reorder-three-outline',
+      name: 'reordenar',
+      redirecTo: '/reorder'
+    },
 
 
    
