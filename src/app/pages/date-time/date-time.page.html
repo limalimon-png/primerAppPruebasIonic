@@ -1,0 +1,59 @@
+<app-header nombreToolbar="dateTime"></app-header>
+
+<ion-content>
+  <!-- <ion-datetime value="2012-12-15T13:47:20.789"></ion-datetime> -->
+
+  <!-- lo hacemos a mano -->
+  <ion-list>
+
+<ion-list-header>
+  <ion-label>datos nacimiento</ion-label>
+</ion-list-header>
+
+    <ion-item>
+      <ion-label >fecha nacimiento</ion-label>
+      <!-- cogemos el valor por defecto del date que seria hoy -->
+        <ion-datetime 
+        [value]="fechaNac.toISOString()"
+        (ionChange)="cambioFecha($event)"
+        
+        ></ion-datetime>
+      </ion-item>
+    
+
+      <ion-list-header>
+        <ion-label>Restricciones</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label >min max</ion-label>
+        <!-- cogemos el valor por defecto del date que seria hoy -->
+          <ion-datetime 
+          [value]="fechaNac.toISOString()"
+          min="1996-12-19"
+          max="2222-12-19"
+          
+          ></ion-datetime>
+        </ion-item>
+
+        <ion-list-header>
+          <ion-label>año</ion-label>
+        </ion-list-header>
+  
+        <ion-item>
+          <ion-label >año</ion-label>
+          <!-- cogemos el valor por defecto del date que seria hoy -->
+            <ion-datetime 
+            [value]="fechaNac.toISOString()"
+            presentation="month-year"
+            min="1996"
+            max="2222"
+            
+            ></ion-datetime>
+          </ion-item>
+
+
+  
+
+  </ion-list>
+</ion-content>

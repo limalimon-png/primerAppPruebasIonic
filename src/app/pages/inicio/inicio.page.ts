@@ -1,3 +1,4 @@
+import { InfiniteScrollPage } from './../infinite-scroll/infinite-scroll.page';
 import { Component, OnInit } from '@angular/core';
 
 //creamos esta interfaz para poder ponerle un tipado expecifico para componente que tiene 2 propiedades
@@ -45,6 +46,32 @@ export class InicioPage implements OnInit {
       icon:'checkmark-done-outline',
       name: 'checkbox',
       redirecTo: '/checkbox'
+    },
+    {
+      icon:'calendar-outline',
+      name: 'dateTime',
+      redirecTo: '/date-time'
+    },
+    {
+      icon:'bookmark-outline',
+      name: 'Fab',
+      redirecTo: '/fab'
+    },
+    {
+      icon:'headset-outline',
+      name: 'prueba',
+      redirecTo: '/prueba'
+    },
+    {
+      icon:'grid-outline',
+      name: 'grid',
+      redirecTo: '/grid'
+    },
+    
+    {
+      icon:'leaf-outline',
+      name: 'InfiniteScroll',
+      redirecTo: '/infinite-scroll'
     },
 
 

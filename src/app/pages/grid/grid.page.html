@@ -1,0 +1,41 @@
+<app-header nombreToolbar="grid"></app-header>
+
+<ion-content>
+
+
+<ion-grid fixed>
+  <ion-row>
+    <!-- para controlar los diferentes tamaños por los tamañps de pantalla 
+      **EL PRIMER SIZE son las filas entonces , si tenemos
+      12 filas entre 3 columnas, seran filas de 4 columns **-->
+    <ion-col 
+    size="12" sizeLg="3" sizeMd="4" sizeSm="6"
+    *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+
+
+
+      
+      <ion-card>
+        <ion-img src="https://as01.epimg.net/meristation/imagenes/2021/08/25/noticias/1629865598_915644_1629865733_noticia_normal.jpg"></ion-img>
+      </ion-card>
+
+
+
+      <ion-card-header>
+        <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+        <ion-card-title>Awesome Title</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ea. Quibusdam minima veritatis omnis ipsam cum incidunt! Iusto, ipsum unde ad nisi veniam dolor nesciunt ab eum laudantium in nihil!
+      </ion-card-content>
+
+
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+
+
+</ion-content>
