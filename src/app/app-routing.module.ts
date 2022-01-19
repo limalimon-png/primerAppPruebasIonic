@@ -88,9 +88,22 @@ const routes: Routes = [
     path: 'popover',
     loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
   },
+  
   {
     path: 'progress',
-    loadChildren: () => import('./components/progress/progress.module').then( m => m.ProgressPageModule)
+    loadChildren: () => import('./pages/progress/progress.module').then( m => m.ProgressPageModule)
+  },
+  {
+    path: 'refresher',
+    loadChildren: () => import('./pages/refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+  {
+    path: 'searchbar',
+    loadChildren: () => import('./pages/searchbar/searchbar.module').then( m => m.SearchbarPageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
   },
   //lo quitamos para el modal
   // {

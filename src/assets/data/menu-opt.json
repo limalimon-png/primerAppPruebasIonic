@@ -92,6 +92,21 @@
       "icon":"code-working-outline",
       "name": "progress bar",
       "redirecTo": "/progress"
+    },
+    {
+      "icon":"arrow-down-outline",
+      "name": "refresher",
+      "redirecTo": "/refresher"
+    },
+    {
+      "icon":"search-outline",
+      "name": "searchbar",
+      "redirecTo": "/searchbar"
+    },
+    {
+      "icon":"copy-outline",
+      "name": "segment",
+      "redirecTo": "/segment"
     }
 
    

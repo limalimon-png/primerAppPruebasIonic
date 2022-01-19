@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress.page.scss'],
 })
 export class ProgressPage implements OnInit {
-
+porcentaje:number=0.1;
   constructor() { }
 
   ngOnInit() {
   }
 
+  rangeChange(event){
+    console.log(event.detail.value)
+    this.porcentaje=event.detail.value/100
+  }
 }

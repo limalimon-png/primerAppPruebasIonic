@@ -27,6 +27,7 @@ export class PopoverPage implements OnInit {
     });
     await popover.present();
   //onwiil dismiss porque lo queremos nada mas pulsarlo
+  
     const { data } = await popover.onWillDismiss();
     console.log(data);
   }
