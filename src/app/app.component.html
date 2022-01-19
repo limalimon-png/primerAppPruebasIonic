@@ -1,4 +1,10 @@
 <ion-app>
+  <!-- importante añadir el contentid si no no funcionara -->
+<!-- can be "xs", "sm", "md", "lg", or "xl" -->
+<ion-split-pane when="md" contentId="main">
+
+
+
 
   <ion-menu side="start" menuId="first" contentId="main">
     <ion-header class="ion-no-border">
@@ -8,7 +14,8 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-menu-toggle>
+        <!-- para el splitpane tambien añadir el autohide -->
+        <ion-menu-toggle autoHide="false">
           <ion-item *ngFor="let c of componentes |async"
   [routerLink]="c.redirecTo"
   detail
@@ -16,8 +23,8 @@
   <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
   {{c.name}}
   </ion-item>
-
-
+  
+  
         </ion-menu-toggle>
         
         
@@ -25,6 +32,8 @@
     </ion-content>
   </ion-menu>
   
-
+  
   <ion-router-outlet id="main"></ion-router-outlet>
+</ion-split-pane>
+
 </ion-app>

@@ -108,6 +108,24 @@
       "name": "segment",
       "redirecTo": "/segment"
     }
+    ,
+    {
+      "icon":"copy-outline",
+      "name": "slides",
+      "redirecTo": "/slides"
+    }
+    ,
+    {
+      "icon":"copy-outline",
+      "name": "tabs",
+      "redirecTo": "/tabs"
+    }
+    ,
+    {
+      "icon":"pricetag-outline",
+      "name": "toast",
+      "redirecTo": "/toast"
+    }
 
    
   ]

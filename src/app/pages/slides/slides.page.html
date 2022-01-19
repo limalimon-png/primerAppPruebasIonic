@@ -1,0 +1,30 @@
+<ion-content>
+
+  <ion-slides pager="ios" class="slide-full">
+  
+    <ion-slide *ngFor="let item of slides">
+      <ion-card >
+        <img [src]="item.img" class="slide-image" >
+        <ion-card-header>
+          <ion-card-subtitle>{{item.titulo}}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content >
+          {{item.desc}}
+        </ion-card-content>
+        <ion-button 
+        *ngIf="(item.titulo==='Tu ubicación')"
+        (click)="onClick()" expand="block" >
+          comezar
+        </ion-button>
+      </ion-card>
+     
+    </ion-slide>
+
+    <ion-slide>
+      
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>
